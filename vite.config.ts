@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig(({ mode }) => ({
   root: 'src',
-  base: mode === 'production' ? '/holly-react/' : '/',
+  base: '/', // ✅ Always use "/" for Vercel root deployment
   build: {
     outDir: '../dist',
     emptyOutDir: true,
@@ -15,8 +15,8 @@ export default defineConfig(({ mode }) => ({
     },
   },
   server: {
-    host: true, // 👈 This allows access from mobile devices
-    port: 5173, // 👈 You can change this if needed
+    host: true,
+    port: 5173,
   },
   plugins: [react()],
 }))
