@@ -57,7 +57,7 @@ function Illustration({ className }: { className?: string }) {
           {/* Profile & Contact Info */}
           <div className="flex flex-col items-center space-y-6 rounded-md bg-white/30 p-6 shadow-lg backdrop-blur-md md:flex-row md:space-x-6 md:space-y-0">
             <img
-              src="https://labeebhassan.com/assets/ppic.png"
+              src="/labeeb.png"
               alt="Labeeb Hassan"
               className="h-32 w-32 rounded-full object-cover object-top shadow-lg ring-4 ring-white"
             />
